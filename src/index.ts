@@ -152,6 +152,6 @@ console.log (`removed shape is ${JSON.stringify(canvas.removeShape(5))}`)
 canvas.sort();
 console.log('/////////////////////////draw before reomoving/////////////////////////');
 canvas.draw();
-console.log('/////////////////////////draw after reomoving/////////////////////////');
+console.log('//////////////////////////draw after reomoving/////////////////////////');
 canvas.removeIf(s => s instanceof Line && s.point.x > s.x);
 canvas.draw();
