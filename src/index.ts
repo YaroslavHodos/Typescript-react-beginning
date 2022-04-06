@@ -131,7 +131,7 @@ class Canvas implements Shape {
         //ascending order of the properti x
         //in case of equaled x values - desendig order of the propery y
         this._shapes.sort((a,b) => a instanceof Point && b instanceof Point ?
-        b.x - a.x || a.y - b.y : 0)
+        a.x - b.x || b.y - a.y : 0)
     }
     removeIf(predicate: (shae:Shape) => boolean) {
         //TODO write methodremoving all the shapes machin the given predicate function
